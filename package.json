@@ -1,0 +1,48 @@
+{
+  "name": "@ecanquiz/vue-body-part-selector",
+  "version": "0.0.0",
+  "description": "Components for forms created from primitive elements",
+  "main": "./dist/vue-body-part-selector.umd.js",
+  "module": "./dist/vue-body-part-selector.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/vue-body-part-selector.mjs",
+      "require": "./dist/vue-body-part-selector.umd.js"
+    },
+    "./*": "./dist/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "component",
+    "library"
+  ],
+  "author": "Ernesto Canquiz",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.7.3",
+    "vue": "^3.4.21",
+    "vue-tsc": "^2.0.6"
+  },
+  "dependencies": {
+    "vue-router": "^4.3.0"
+  }
+}
